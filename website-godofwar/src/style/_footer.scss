@@ -1,0 +1,152 @@
+.footer {
+  padding-top: 156px;
+  position: relative;
+  padding-bottom: 20px;
+
+  @include _600 {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: " ";
+    display: block;
+    width: 786px;
+    height: 439px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: -1;
+    background: url(img/footer.png) no-repeat center/cover;
+
+    @include _600 {
+      display: none;
+    }
+  }
+
+  &-top {
+    justify-content: space-between;
+
+    @include _979 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-menu {
+    column-gap: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+    flex-wrap: wrap;
+
+    @include _600 {
+      column-gap: 15px;
+      line-height: 22px;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+
+      &:hover {
+        color: $violet;
+      }
+    }
+  }
+
+  &-lang {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    cursor: pointer;
+
+    &__current {
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      position: relative;
+
+      &:hover {
+        .footer-lang__content {
+          visibility: visible;
+        }
+      }
+    }
+
+    &__content {
+      min-width: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background: $dark;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      visibility: hidden;
+
+      &-item {
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: $violet;
+        }
+      }
+    }
+    svg {
+      width: 12px;
+      fill: $white;
+      transform: rotate(180deg);
+      margin-left: 9px;
+    }
+  }
+
+  &-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #494949;
+    margin: 50px auto 58px auto;
+    max-width: 700px;
+
+    @include _600 {
+      font-size: 12px;
+      line-height: 16px;
+      margin: 20px auto 20px auto;
+    }
+  }
+
+  &-icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-year {
+    margin: 20px auto 13px auto;
+  }
+
+  &-year,
+  &-rights {
+    font-weight: 400;
+    line-height: 19px;
+    color: #494949;
+    text-align: center;
+
+    @include _600 {
+      font-size: 12px;
+    }
+
+    a {
+      color: $violet;
+      text-decoration: underline;
+    }
+  }
+}

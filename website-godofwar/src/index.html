@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+
+  <body>
+    <section class="section section-main">
+      <div class="container">
+        <header class="header flex">
+          <div class="header-menu flex">
+            <div class="header-menu__button"><span></span></div>
+            <nav class="header-menu__list">
+              <ul class="flex flex-center">
+                <li>
+                  <a
+                    data-text="editions"
+                    class="header-menu__link menu-link"
+                    href="#editions"
+                    >издания</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-text="controller"
+                    class="header-menu__link menu-link"
+                    href="#controller"
+                    >контроллер</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-text="about"
+                    class="header-menu__link menu-link"
+                    href="#about"
+                    >ОБ ИГРЕ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-text="explore"
+                    class="header-menu__link menu-link"
+                    href="#explore"
+                    >Исследовать</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-text="news"
+                    class="header-menu__link menu-link"
+                    href="#news"
+                    >Новости</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-text="faq"
+                    class="header-menu__link menu-link"
+                    href="#faq"
+                    >вопросы</a
+                  >
+                </li>
+                <li>
+                  <div class="header-menu__link lang">
+                    <span data-text="lang" class="current-lang">Русский</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Layer_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 330 330"
+                      style="enable-background: new 0 0 330 330"
+                      xml:space="preserve"
+                    >
+                      <path
+                        id="XMLID_224_"
+                        d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394  l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393  C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"
+                      />
+                    </svg>
+                    <div class="header-menu__languages">
+                      <div
+                        class="header-menu__language language"
+                        data-lang="ru"
+                      >
+                        Русский
+                      </div>
+                      <div
+                        class="header-menu__language language"
+                        data-lang="en"
+                      >
+                        English
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-timer flex flex-center">
+            <span data-text="release">Релиз:</span>
+            <div class="header-timer__values flex flex-center">
+              <div class="header-timer__item">
+                <div class="header-timer__item-value" id="days">0</div>
+                <div data-text="days" class="header-timer__item-info">Д</div>
+              </div>
+              <div class="header-timer__item">
+                <div class="header-timer__item-value" id="hours">0</div>
+                <div data-text="hours" class="header-timer__item-info">Ч</div>
+              </div>
+              <div class="header-timer__item">
+                <div class="header-timer__item-value" id="minutes">0</div>
+                <div data-text="minutes" class="header-timer__item-info">М</div>
+              </div>
+              <div class="header-timer__item">
+                <div class="header-timer__item-value" id="seconds">0</div>
+                <div data-text="seconds" class="header-timer__item-info">С</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="description">
+          <div class="description-title">
+            <h1 data-text="h1">Бог Войны Рагнарёк</h1>
+            <div data-text="descriptionSubtitle" class="description-subtitle">
+              Действие происходит через три года после событий предыдущей игры,
+              Фимбулвинтер, великая зима, которая длится три лета, подходит к
+              концу, и начнется предсказанный Рагнарёк.
+            </div>
+            <a href="#editions" data-text="buttonBuy" class="description-button"
+              >купить</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-editions" id="editions">
+      <div class="container">
+        <div class="editions" id="editions">
+          <h2 data-text="editionsH2">Издания</h2>
+          <div class="editions-list">
+            <div class="editions-item">
+              <div class="editions-img">
+                <img src="./img/card1.png" alt="image" />
+              </div>
+              <div data-text="editionsTitle" class="editions-item__title">
+                Стандартная версия
+              </div>
+              <div class="editions-item__subtitle">PS4</div>
+              <ul class="editions-item__description">
+                <li data-text="editions1">Автономная игра включена</li>
+                <li data-text="editions2">Дистанционное воспроизведение</li>
+                <li data-text="editions3">Требуется триггерный эффект</li>
+              </ul>
+              <div data-text="money1" class="editions-item__price">100р.</div>
+              <div
+                data-text="buttonBuy"
+                class="editions-item__btn buy-button"
+                data-value="0"
+              >
+                купить
+              </div>
+            </div>
+            <div class="editions-item">
+              <div>
+                <img src="./img/card1.png" alt="image" />
+              </div>
+              <div data-text="editionsTitle" class="editions-item__title">
+                Стандартная версия
+              </div>
+              <div class="editions-item__subtitle">PS5</div>
+              <ul class="editions-item__description">
+                <li data-text="editions1">Автономная игра включена</li>
+                <li data-text="editions2">Дистанционное воспроизведение</li>
+                <li data-text="editions3">Требуется триггерный эффект</li>
+              </ul>
+              <div data-text="money2" class="editions-item__price">120р.</div>
+              <div
+                data-text="buttonBuy"
+                class="editions-item__btn buy-button"
+                data-value="1"
+              >
+                купить
+              </div>
+            </div>
+            <div class="editions-item">
+              <div>
+                <img src="./img/card3.png" alt="image" />
+              </div>
+              <div data-text="editionsTitle3" class="editions-item__title">
+                Цифровое расширенное издание
+              </div>
+              <div class="editions-item__subtitle">PS5</div>
+              <ul class="editions-item__description">
+                <li data-text="editionsDescription">
+                  Все возможности стандартной версии
+                </li>
+                <li data-text="editionsDescription2">Броня Темной Долины</li>
+                <li data-text="editionsDescription3">
+                  Официальный цифровой саундтрек
+                </li>
+              </ul>
+              <div data-text="money3" class="editions-item__price">150р.</div>
+              <div
+                data-text="buttonBuy"
+                class="editions-item__btn buy-button"
+                data-value="2"
+              >
+                купить
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-dual" id="controller">
+      <div class="container">
+        <h2 data-text="dual">Двойной смысл</h2>
+        <div class="dual flex flex-center">
+          <div class="dual-description">
+            <p data-text="dualDescription">
+              Вы также можете купить эксклюзивный контроллер с Бог Войны
+              Рагнарёк тема для ПС5
+            </p>
+            <p data-text="dualDescription2">
+              При покупке контроллера и игры (любого издания) вы получите скидку
+              15% на два предмета.
+            </p>
+            <div class="dual-description__info flex">
+              <div data-text="dualPrice" class="dual-description__price">
+                300р.
+              </div>
+              <a
+                href="#editions"
+                data-text="dualButton"
+                class="dual-description__button"
+                >купить дуалсенс с игрой</a
+              >
+            </div>
+          </div>
+          <div class="dual-img">
+            <img src="./img/dual.png" alt="DualSense" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-about" id="about">
+      <h2 data-text="about">Об игре</h2>
+      <div class="video">
+        <div class="video-info">
+          <div data-text="videoTitle" class="video-title">Смотреть трейлер</div>
+          <div data-text="videoBtn" class="video-btn">Смотреть</div>
+        </div>
+        <video id="video" src="img/video.mp4" poster="img/bg-video.png"></video>
+      </div>
+    </section>
+
+    <section class="section hidden section-explore" id="explore">
+      <div class="container">
+        <h2 data-text="exploreH2">Исследуйте серию Бог Войны</h2>
+        <div class="explore-items">
+          <div class="explore-item">
+            <h3 data-text="exploreH3">
+              Вот системные требования Бог Войны (ПК)
+            </h3>
+            <div class="explore-switch flex flex-center">
+              <div
+                data-text="exploreSwitchTitle"
+                class="explore-switch__title active"
+                data-requirements="minimum"
+              >
+                Минимальные
+              </div>
+              <div class="explore-switch__checkbox">
+                <input type="checkbox" name="requirements" class="checkbox" />
+                <span></span>
+              </div>
+              <div
+                data-text="exploreSwitchTitle2"
+                class="explore-switch__title"
+                data-requirements="recommended"
+              >
+                Рекомендуемые
+              </div>
+            </div>
+            <div class="explore-info flex flex-center">
+              <div class="explore-img">
+                <div class="explore-img__wrap">
+                  <img src="./img/pc.png" alt="image" />
+                </div>
+              </div>
+              <div class="explore-description">
+                <ul class="explore-list active" id="minimum">
+                  <li>
+                    <span data-text="cpu" class="violet">ПРОЦЕССОР</span>Intel
+                    i5-2500k
+                  </li>
+                  <li>
+                    <span data-text="ram" class="violet"
+                      >Оперативная память</span
+                    >8 GB
+                  </li>
+                  <li>
+                    <span data-text="os" class="violet"
+                      >операционная система</span
+                    >Windows 10
+                  </li>
+                  <li>
+                    <span data-text="videocard" class="violet">ВИДЕОКАРТА</span
+                    >NVIDIA GTX 960 (4 GB)
+                  </li>
+                  <li>
+                    <span data-text="freediskspace" class="violet"
+                      >СВОБОДНОЕ ДИСКОВОЕ МЕСТО</span
+                    >50 GB
+                  </li>
+                  <li>
+                    <span data-text="dedicatedvideoram" class="violet"
+                      >ВЫДЕЛЕННАЯ ВИДЕО память</span
+                    >4 GB
+                  </li>
+                </ul>
+                <ul class="explore-list" id="recommended">
+                  <li>
+                    <span data-text="cpu" class="violet">ПРОЦЕССОР</span>Intel
+                    i9-3600k
+                  </li>
+                  <li>
+                    <span data-text="ram" class="violet"
+                      >Оперативная память</span
+                    >16 GB
+                  </li>
+                  <li>
+                    <span data-text="os" class="violet"
+                      >операционная система</span
+                    >Windows 11
+                  </li>
+                  <li>
+                    <span data-text="videocard" class="violet">ВИДЕОКАРТА</span
+                    >NVIDIA GTX 4060 (16 GB)
+                  </li>
+                  <li>
+                    <span data-text="freediskspace" class="violet"
+                      >СВОБОДНОЕ ДИСКОВОЕ МЕСТО</span
+                    >90 GB
+                  </li>
+                  <li>
+                    <span data-text="dedicatedvideoram" class="violet"
+                      >ВЫДЕЛЕННАЯ ВИДЕО память</span
+                    >8 GB
+                  </li>
+                </ul>
+                <a
+                  href="#editions"
+                  data-text="buttonBuy"
+                  class="explore-button buy-button"
+                  >купить</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="explore-item">
+            <h3 data-text="exploreH3item">Бог Войны для PS4</h3>
+            <div class="explore-switch flex flex-center">
+              <div
+                data-text="standard"
+                class="explore-switch__title active"
+                data-versions="standard"
+              >
+                Стандартная
+              </div>
+              <div class="explore-switch__checkbox">
+                <input type="checkbox" name="versions" class="checkbox" />
+                <span></span>
+              </div>
+              <div
+                data-text="limited"
+                class="explore-switch__title"
+                data-versions="limited"
+              >
+                Ограниченная
+              </div>
+            </div>
+            <div class="explore-info flex flex-center reverse">
+              <div class="explore-img">
+                <div class="explore-img__wrap">
+                  <img
+                    class="explore-img__wrap-image"
+                    src="./img/ps4.png"
+                    alt="image"
+                  />
+                </div>
+              </div>
+              <div class="explore-description">
+                <ul class="active" id="standard">
+                  <li>
+                    <span data-text="platform" class="violet">платформа</span
+                    >PS4
+                  </li>
+                  <li>
+                    <span data-text="premiere" class="violet">дата выхода</span
+                    >20.04.2022
+                  </li>
+                  <li>
+                    <span data-text="publisher" class="violet">издатель</span
+                    >Sony
+                  </li>
+                  <li>
+                    <span data-text="species" class="violet">жанр</span>Action
+                  </li>
+                  <li>
+                    <span data-text="voice" class="violet">язык</span>English
+                  </li>
+                  <li>
+                    <span data-text="displaylanguages" class="violet"
+                      >Языки отображения</span
+                    >English
+                  </li>
+                </ul>
+                <ul id="limited">
+                  <li>
+                    <span data-text="platform" class="violet">платформа</span
+                    >PS5
+                  </li>
+                  <li>
+                    <span data-text="premiere" class="violet">дата выхода</span
+                    >20.07.2022
+                  </li>
+                  <li>
+                    <span data-text="publisher" class="violet">издатель</span
+                    >Sony
+                  </li>
+                  <li>
+                    <span data-text="species" class="violet">жанр</span>Action
+                  </li>
+                  <li>
+                    <span data-text="voice" class="violet">язык</span>English
+                  </li>
+                  <li>
+                    <span data-text="displaylanguages" class="violet"
+                      >Языки отображения</span
+                    >English
+                  </li>
+                </ul>
+                <a
+                  href="#editions"
+                  data-text="buttonBuy"
+                  class="explore-button buy-button"
+                  >купить</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-news" id="news">
+      <h2 data-text="sectionnews">Новости</h2>
+      <div class="news swiper flex flex-center">
+        <div class="swiper-wrapper">
+          <!-- 1 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">19/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle1" class="news-item__title">
+              рассказывает взрослую историю
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news4.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext1">
+                  В игру вернутся не только знакомые персонажи, но и совершенно
+                  новые. Речь здесь идет о Торе, представленном как жестокий и
+                  психически неуравновешенный исполнитель «грязной работы» на
+                  службе у Одина, а также сам повелитель богов, оставивший свой
+                  след в событиях предыдущей части, хотя и лично в нем не
+                  фигурировал.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">21/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle2" class="news-item__title">
+              получит большое обновление при выпуске
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news1.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext2">
+                  Неудивительно, что в последнее время мы регулярно получаем
+                  новую информацию и материалы, связанные с названием. На
+                  прошлой неделе вышел трейлер, демонстрирующий возможности игры
+                  на PlayStation 5. попал в сеть, а чуть раньше мы узнали, что
+                  работа над постановкой завершена. Между тем оказывается, что
+                  грядущий сиквел приключений Кратоса и Атрея получит крупное
+                  обновление при выходе.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать...</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">23/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle3" class="news-item__title">
+              является одной из крупнейших игр для PS5
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news2.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext3">
+                  Любители цифрового распространения должны быть готовы к
+                  множеству загрузок. Второе с премьеры приключение Кратоса и
+                  Атрея на Крайнем Севере займет почти 120 ГБ — принимая решение
+                  о покупке игры в PlayStation Store, стоит грамотно
+                  спланировать загрузку, чтобы начать игру в день премьеры.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать...</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">29/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle4" class="news-item__title">
+              является последней главой в эпической истории.
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news3.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext4">
+                  Долгожданная игра God of War: Ragnarok дебютирует чуть более
+                  чем через двадцать дней. По этому поводу представители студии
+                  Санта-Моника совместно с Sony решили выпустить новый трейлер,
+                  посвященный эпической истории Кратоса и Атрея — таким образом
+                  мы получили подтверждение того, что Рагнарек — финальная глава
+                  приключений бога войны.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать...</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 1 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">19/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle1" class="news-item__title">
+              рассказывает взрослую историю
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news4.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext1">
+                  В игру вернутся не только знакомые персонажи, но и совершенно
+                  новые. Речь здесь идет о Торе, представленном как жестокий и
+                  психически неуравновешенный исполнитель «грязной работы» на
+                  службе у Одина, а также сам повелитель богов, оставивший свой
+                  след в событиях предыдущей части, хотя и лично в нем не
+                  фигурировал.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div data-text="newsitemsubtitle" class="news-item__subtitle">
+                Бог Войны Рагнарёк
+              </div>
+              <div class="news-item__date">21/01/2023</div>
+            </div>
+            <div data-text="newsitemtitle2" class="news-item__title">
+              получит большое обновление при выпуске
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div class="news-item__image">
+                <img src="./img/news1.png" alt="image" />
+              </div>
+              <div class="news-item__text flex">
+                <p data-text="newsitemtext2">
+                  Неудивительно, что в последнее время мы регулярно получаем
+                  новую информацию и материалы, связанные с названием. На
+                  прошлой неделе вышел трейлер, демонстрирующий возможности игры
+                  на PlayStation 5. попал в сеть, а чуть раньше мы узнали, что
+                  работа над постановкой завершена. Между тем оказывается, что
+                  грядущий сиквел приключений Кратоса и Атрея получит крупное
+                  обновление при выходе.
+                </p>
+                <a
+                  data-text="newsitembutton1"
+                  href="#"
+                  class="news-item__button"
+                  >Читать...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev swiper-button flex flex-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            id="_24x24_On_Light_Arrow-Left"
+            data-name="24x24/On Light/Arrow-Left"
+          >
+            <rect id="view-box" width="16" height="16" fill="none" />
+            <path
+              id="Shape"
+              d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+              transform="translate(14.75 17.75) rotate(180)"
+              fill="inherit"
+            />
+          </svg>
+        </div>
+
+        <div class="swiper-button-next swiper-button flex flex-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            id="_24x24_On_Light_Arrow-Left"
+            data-name="24x24/On Light/Arrow-Left"
+          >
+            <rect id="view-box" width="16" height="16" fill="none" />
+            <path
+              id="Shape"
+              d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+              transform="translate(14.75 17.75) rotate(180)"
+              fill="inherit"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-faq" id="faq">
+      <div class="container">
+        <h2 data-text="faqh2">Часто задаваемые вопросы</h2>
+        <div class="faq-items flex">
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p data-text="faqitemheader">Когда выйдет следующий Бог Войны?</p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p data-text="faqitemcontent">
+                Бог Войны Рагнарёк выйдет 9 ноября 2022 года.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p data-text="faqitemheader2">
+                Будет ли в Бог Войны Рагнарёк обновления?
+              </p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p data-text="faqitemcontent2">Да, конечно.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p data-text="faqitemheader3">О чем бог войны?</p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p data-text="faqitemcontent3">
+                После десять лет на службе у олимпийских богов, спартанский
+                солдат Афина поручает Кратосу найти ящик Пандоры.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top flex">
+          <ul class="footer-menu flex flex-center">
+            <li>
+              <a data-text="editions" class="menu-link" href="#editions"
+                >ИЗДАНИЯ</a
+              >
+            </li>
+            <li>
+              <a data-text="controller" class="menu-link" href="#controller"
+                >КОНТРОЛЛЕР</a
+              >
+            </li>
+            <li>
+              <a data-text="about" class="menu-link" href="#about">ОБ ИГРЕ</a>
+            </li>
+            <li>
+              <a data-text="explore" class="menu-link" href="#explore"
+                >ИССЛЕДОВАТЬ</a
+              >
+            </li>
+            <li>
+              <a data-text="news" class="menu-link" href="#news">НОВОСТИ</a>
+            </li>
+            <li>
+              <a data-text="faq" class="menu-link" href="#faq">ВОПРОСЫ </a>
+            </li>
+          </ul>
+
+          <div class="footer-lang flex">
+            <div class="footer-lang__list">
+              <div data-text="language2" class="footer-lang__current">
+                Русский
+              </div>
+
+              <div class="footer-lang__content">
+                <div class="footer-lang__content-item language" data-lang="ru">
+                  Русский
+                </div>
+                <div class="footer-lang__content-item language" data-lang="en">
+                  English
+                </div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Layer_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 330 330"
+              style="enable-background: new 0 0 330 330"
+              xml:space="preserve"
+            >
+              <path
+                id="XMLID_224_"
+                d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394  l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393  C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div data-text="footerinfo" class="footer-info">
+          Загрузка этого продукта регулируется Условиями обслуживания
+          PlayStation Network и нашими Условиями использования программного
+          обеспечения, а также любыми особыми дополнительными условиями,
+          применимыми к этому продукту. Если вы не хотите принимать эти условия,
+          не загружайте этот продукт. См. Условия использования для получения
+          более важной информации.
+        </div>
+
+        <div class="footer-icon">
+          <a
+            title="website developer"
+            href="https://alexrozhkov.com/"
+            target="_blank"
+          >
+            <img src="./img/pc-logo.svg" alt="logo"
+          /></a>
+        </div>
+
+        <div data-text="footerrights" class="footer-rights">
+          Разработан AlexRozhkov. Все права защищены
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal-wrapper">
+        <div data-text="modaltitle" class="modal-title">
+          GOD OF WAR RAGNAROK
+        </div>
+        <div class="modal-version"></div>
+
+        <form class="form">
+          <div class="form-group full">
+            <label data-text="creditcard" for="card">Credit Card:</label>
+            <input
+              type="text"
+              required
+              placeholder="0000 0000 0000 0000"
+              id="card"
+            />
+          </div>
+
+          <div class="form-group">
+            <label data-text="expire" for="expire">expire:</label>
+            <input type="text" required placeholder="mm/yy" id="expire" />
+          </div>
+
+          <div class="form-group">
+            <label for="ccv">ccv:</label>
+            <input type="text" required placeholder="***" id="ccv" />
+          </div>
+
+          <div class="form-group full">
+            <label data-text="instant" for="instant">Name:</label>
+            <input type="text" required placeholder="John Doe" id="instant" />
+          </div>
+
+          <div class="form-checkbox flex flex-center">
+            <input type="checkbox" name="agreement" id="agreement" required />
+            <span class="check"></span>
+            <label data-text="agreement" for="agreement">
+              I agree with the rules of the site
+            </label>
+          </div>
+
+          <div data-text="modaldescription" class="modal-description">
+            Download of this product is subject to the PlayStation Network Terms
+            of Service and our Software Usage Terms plus any specific additional
+            conditions applying to this product. If you do not wish to accept
+            these terms, do not download this product. See Terms of Service for
+            more important information.
+          </div>
+
+          <div class="modal-total flex flex-center">
+            <div data-text="modaltotaltext" class="modal-total__text">
+              YOUR TOTAL SUMMA:
+            </div>
+            <div class="modal-total__price"></div>
+          </div>
+
+          <button data-text="buttonBuy" type="submit" class="modal-submit">
+            buy NOW
+          </button>
+        </form>
+
+        <div class="modal-close">x</div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </body>
+</html>

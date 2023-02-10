@@ -1,0 +1,109 @@
+.news {
+  margin-top: 32px;
+  transition: transform 0.5s;
+  transform: translate(0);
+
+  @include _600 {
+    margin-top: 20px;
+  }
+
+  &-item {
+    background: linear-gradient(177.87deg, #30373f 41.63%, #141615 185.57%);
+    border-radius: 20px;
+    padding: 20px;
+
+    &__info {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: $violet;
+    }
+
+    &__date {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 17px;
+      color: $grey;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: $white;
+      margin: 7px 0 16px 0;
+
+      @include _600 {
+        font-size: 15px;
+        line-height: 18px;
+        margin: 5px 0 15px 0;
+      }
+    }
+
+    &__description {
+      column-gap: 24px;
+      min-height: 248px;
+      align-items: flex-start;
+
+      @include _600 {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__image {
+      min-width: 278px;
+      height: 100%;
+      @include bg;
+    }
+
+    &__text {
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 250px;
+
+      @include _600 {
+        min-height: 150px;
+        margin-top: 15px;
+      }
+
+      p {
+        color: #d9d9d9;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+
+    &__button {
+      display: block;
+      background: $grey;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $white;
+      padding: 8px 30px;
+      width: max-content;
+      margin-left: auto;
+      margin-top: 20px;
+      transition: background 0.25s;
+
+      @include _600 {
+        margin-top: 15px;
+      }
+
+      &:hover {
+        background: $dark;
+      }
+    }
+  }
+}

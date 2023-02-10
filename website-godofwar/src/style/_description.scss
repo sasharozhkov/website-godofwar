@@ -1,0 +1,57 @@
+.description {
+  margin-top: 100px;
+  max-width: 540px;
+  animation: move 1s ease-in-out;
+
+  @include _979 {
+    margin-top: 50px;
+  }
+
+  @include _600 {
+    max-width: 380px;
+  }
+
+  @include _480 {
+    margin-top: 15px;
+  }
+
+  &-title {
+    h1 {
+      font-weight: 600;
+      font-size: 100px;
+      line-height: 100px;
+      @include _979 {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      @include _600 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $sea;
+    margin-top: 26px;
+
+    @include _600 {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &-button {
+    @include button;
+    @include hoverViolet;
+    margin-top: 36px;
+
+    @include _600 {
+      margin-top: 20px;
+    }
+  }
+}
