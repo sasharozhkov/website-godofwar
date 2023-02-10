@@ -1,0 +1,239 @@
+.explore {
+  &-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    margin-top: 32px;
+
+    @include _979 {
+      row-gap: 40px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+
+      @include _600 {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  &-switch {
+    margin-top: 20px;
+    column-gap: 15px;
+
+    @include _600 {
+      column-gap: 10px;
+    }
+
+    &__checkbox {
+      width: 54px;
+      height: 25px;
+      background: $dark;
+      border-radius: 12px;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+
+        &:checked {
+          & + span {
+            transform: translateX(28px);
+          }
+        }
+      }
+
+      span {
+        border-radius: 50%;
+        background: $violet;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transform: translate(0);
+        transition: transform 0.25s;
+      }
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $dark;
+
+      &.active {
+        color: $white;
+      }
+    }
+  }
+
+  &-info {
+    margin-top: 96px;
+    column-gap: 5%;
+    transition: column-gap 0.5s;
+
+    @include _979 {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+
+      @include _979 {
+        flex-direction: column;
+      }
+
+      .explore {
+        &-img {
+          justify-content: flex-start;
+
+          @include _979 {
+            justify-content: center;
+          }
+        }
+
+        &-description {
+          text-align: right;
+
+          @include _979 {
+            text-align: left;
+          }
+        }
+
+        &-button {
+          margin-left: auto;
+
+          @include _979 {
+            margin-top: 20px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-img {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include _979 {
+      justify-content: center;
+    }
+
+    &__wrap {
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      @include bg;
+      position: relative;
+      background: url(img/bg-card1.png) no-repeat center/cover;
+
+      img {
+        max-width: unset;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include _979 {
+          max-width: 100%;
+        }
+      }
+
+      @include _979 {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include _480 {
+        width: 150px;
+        height: 150px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 161px;
+        height: 140px;
+        background: $orange;
+        filter: blur(75px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        opacity: 0.8;
+
+        @include _979 {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &-image {
+        @include _979 {
+          width: 130px;
+        }
+        @include _480 {
+          width: 95px;
+        }
+      }
+    }
+  }
+
+  &-description {
+    min-width: max-content;
+    width: 50%;
+
+    @include _979 {
+      margin-top: 20px;
+    }
+
+    ul {
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 36px;
+      display: none;
+
+      @include _979 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      &.active {
+        display: flex;
+      }
+
+      li {
+        text-transform: uppercase;
+      }
+
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-button {
+    @include button($orange);
+    @include hoverOrange;
+    margin-top: 28px;
+    @include _979 {
+      margin-top: 20px;
+    }
+  }
+}
